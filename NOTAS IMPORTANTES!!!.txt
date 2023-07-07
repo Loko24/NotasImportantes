@@ -1,0 +1,22 @@
+NOTAS IMPORTANTES!!!
+
+1. Crear la carpeta donde se alojará el proyecto
+2. Abrir la carpeta con Visual Studio Code
+3. Abrir la consola
+    3.1 Correr el comando
+        3.1.1 npm create vite
+            3.1.1.1 seleccionar vanilla
+            3.1.1.2 seleccionar javascript
+        3.1.2 npm i
+            3.1.2.1 descarga las dependencias del proyecto
+        3.1.3 npm i phaser
+            3.1.3.1 instala el proyecto de pahser
+4. Reemplazar el contenido del archivo Index.html que se creó, con el contenido del Index.html de esta guía
+5. Crear una carpeta en la raiz llamada src
+6. Dentro de src crear una carpeta llamada scenes
+7. Dentro de src crear un archivo main.js cuyo contenido esta en el main.js de esta guia
+8. Dentro de src crear un archivo consts.js cuyo contenido esta en el consts.js de esta guia
+9. Dentro de scenes crear una carpeta llamada Init
+10. Dentro de Init crear un archivo llamado index.js
+11. En el archivo main.js de la raiz hay un atributo llamado scene, que es sumamente importante porque tendrá la relación de las escenas que habrá
+12. El archivo index.js que se encuentra dentro de la carpeta Init contendrá la lógica principal del juego

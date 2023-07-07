@@ -1,0 +1,21 @@
+//Estructura base
+1. crear carpeta
+2. npm create vite .
+    2.1 vanilla
+    2.2 javascript
+3. npm i
+4. npm i phaser
+5. crear carpeta src
+    5.1 pasar el main.js a src
+    5.2 crear archivo consts.js 
+6. cambiar el contenido del html Index.html
+//Juego
+1. dentro de las posibles escenas que tenga el juego habrá una carpeta assets
+2. las imagenes estarán en una carpeta img que estará dentro de assets
+3. si hay sonidos igual que el paso 2 pero con una carpeta sounds
+4. carga de los assets de mapa
+    4.1 para crear las plataformas o lo que se vaya a usar se usará la herramienta Tiled
+    4.2 al cargar la hoja de sprites dentro de Tiled marcar el checkbox que se encuentra bajo el campo de nombre del nuevo Tiled
+    4.3 dentro de Tiled para tener un organización y evitar conflictos cada cosa (plataformas, vidas, enemigos, etc) se podran en una capa diferente
+    4.4 al finalizar lo que se quiere cargar en el proyecto, se le da a exportar y se guarda con extension .json
+5. 

@@ -1,0 +1,40 @@
+1. Defimos la estructura de ficheros de nuestra aplicación y cargamos la imagen de fondo de la primera escena.
+    1.1 La carga de fondo se puede encontrar en el repo de clicker
+2. Las fisicas se cargan en el create
+	2.1 this.physics.add.image(50, 100, 'nombre del sprite')
+3. en el main.js despues de la variable config, agregar el siguiente bloque de codigo:
+	3.1 physics: {
+			default: 'arcade',
+			arcade: {
+			debug: true,
+				gravity: {
+				y: 300,
+				},
+		},
+	},
+4. Cargar una imagen
+	4.1 this.load.image('fondo', fondo);
+	4.2 dentro de los parametros, el primero es el nombre que se le quiere dar, el segundo es el nombre del import 
+5. Agregar la imagen a la escena
+	5.1  this.add.sprite(480, 320, 'fondo');
+	5.2 dentro de los parametros, los dos primeros son la posicion en la pantalla, el segundo es el nombre asignado a la variable donde se cargo el sprite
+6. Si se quiere agregar vidas
+	6.1 this.contadorVidas = 3;
+7. Para aghregar una hoja de sprites
+	7.1 this.load.spritesheet('explosion', crash, {
+            frameWidth: 199,
+            frameHeight: 200
+        });
+	7.2 dentro de los parametros se le asigna, el nombre de la variable
+	7.3 el nombre del import (se importa como una imagen normal)
+	7.4 el tamaño
+8. Para crear una animación
+	8.1 this.anims.create({
+            key: 'explosionAnim',
+            frames: this.anims.generateFrameNumbers('explosion', { start: 0, end: 4 }),
+            frameRate: 7
+        });
+	8.2 el primer argumento es el nombre de la animación
+	8.3 el segundo son los frames del sprite, iniciando con el nombre asignado y continuando con la posicion de los sprites a usar
+	8.4 la velocidad de ejecución de los frames por segundo
+	
